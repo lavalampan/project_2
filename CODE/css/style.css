@@ -877,16 +877,23 @@ footer li a:hover {
     margin: 0;
 }
 
-.content .bottom {
+.content .subheader .bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     height: 100px;
     background-color: white;
     width: 100%;
-    -webkit-box-shadow: 0 1px 1px rgba(1, 1, 1, 0.2);
-    -moz-box-shadow: 0 1px 1px rgba(1, 1, 1, 0.2);
-    box-shadow: 0 1px 1px rgba(1, 1, 1, 0.2);
+    line-height: 100px;
 }
 
-.content .bottom a {}
+.content .subheader .bottom a {
+    font-weight: bold;
+}
+
+.content .subheader .bottom .left a {}
+
+.content .subheader .bottom .right a {}
 
 section {
     padding: 40px 0;

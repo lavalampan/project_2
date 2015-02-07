@@ -36,50 +36,6 @@
 				margin: 0;
 			}
 		}
-		.down {
-			display: block;
-			@include transition(none);
-			width: 60px;
-			height: 60px;
-			position: absolute;
-			bottom: 20px;
-			left: 50%;
-			margin-left: -30px;
-			@include background(image-url('go_down.png', false, false) no-repeat 0 0);
-			-webkit-animation-name: bounce;
-			-moz-animation-name: bounce;
-			-o-animation-name: bounce;
-			-ms-animation-name: bounce;
-			animation-name: bounce; 
-
-			-webkit-animation-direction: normal;
-			-moz-animation-direction: normal;
-			-o-animation-direction: normal;
-			-ms-animation-direction: normal;
-			animation-direction: normal; 
-
-			-webkit-animation-duration: 2s;
-			-moz-animation-duration: 2s;
-			-o-animation-duration: 2s;
-			-ms-animation-duration: 2s;
-			animation-duration: 2s; 
-
-			-webkit-animation-iteration-count: infinite;
-			-moz-animation-iteration-count: infinite;
-			-o-animation-iteration-count: infinite;
-			-ms-animation-iteration-count: infinite;
-			animation-iteration-count: infinite; 
- 
-		    &:hover {
-				-webkit-animation-name: none;
-				-moz-animation-name: none;
-				-o-animation-name: none;
-				-ms-animation-name: none;
-				animation-name: none; 
-
-				background-position: 0 -60px;
-		    }			
-		}
 	}
 }
 
