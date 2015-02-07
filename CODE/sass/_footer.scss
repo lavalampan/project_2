@@ -1,0 +1,72 @@
+/* --------------------------------------------------------------------------------------
++
++ FOOTER
++
+-------------------------------------------------------------------------------------- */
+footer {
+	background-color: $footer-bgr;
+	padding: 40px 0;
+	text-align: center;
+	position: relative;
+	// top: 56px;
+	.container {
+		overflow: hidden;
+		&>a {
+			display: inline-block;
+			margin-bottom: 15px;
+			&:hover {
+				@include opacity(.5);
+			}
+		}
+		img {
+			&:hover {
+				@include opacity(.5);
+			}
+			
+		}
+	}
+	.left, .right {
+		float: none;
+	}
+	small {
+		display: block;
+		clear: both;
+		font-size: 14px;
+		color: #8494a7;
+		margin-bottom: 30px;
+		margin-top: 10px;
+		
+		a {
+			color: #8494a7;
+			&:hover {
+				color: #506477;
+			}
+		}
+		i {
+			display: block;
+			font-style: normal;
+		}
+	}
+	ul {
+		text-align: center;
+	}
+	li {
+		display: inline-block;
+		margin-left: 10px;
+		&:first-child {
+			margin-left: 0;
+		}
+		a { 
+			width: 48px;
+			height: 48px;
+			display: block;
+			border: 2px solid #8494a7;
+			@include border-radius(50%);
+			@include transition(none);
+			&:hover {
+				border: 2px solid #ff605a;
+				background-color: #ff605a;
+			}
+		}
+	}
+}

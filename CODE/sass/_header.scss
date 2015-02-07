@@ -1,0 +1,90 @@
+/* --------------------------------------------------------------------------------------
++
++ HEADER
++
+-------------------------------------------------------------------------------------- */
+header  {
+	height: 56px;
+	position: fixed;
+	background-color: $header-bgr;
+	width: 100%;
+	z-index: 2000;
+	@include box-shadow(0 1px 1px rgba(1,1,1,.2));
+	.container {
+		position: relative;
+		height: 56px;
+	}
+	.logo {
+		top: 19px;
+		position: relative;
+		float: left;
+		img {
+			width: 74px;
+		}
+	}
+	nav {
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 56px;
+		width: 64px;
+		display: block;
+		@include background(image-url('menu_drop.png', false, false) no-repeat 50% 50%);
+		cursor: pointer;
+		// &:hover {
+		// 	ul {
+		// 		// @include translate( 0, 0);
+		// 		@include opacity(1);
+		// 		visibility: visible;
+		// 		.ie7 &, .ie8 & {
+		// 			display: block;
+		// 		}
+		// 	}
+		// }
+		ul {
+			position: absolute;
+			top: 100%;
+			right: 0;
+			// width: 320px;
+			@include transition(all .3s ease);
+			display: none;
+			// @include opacity(0);
+			// visibility: hidden;
+			// .ie7 &, .ie8 & {
+			// 	@include opacity(1);
+			// 	visibility: visible;
+			// 	display: none;
+			// }
+			li {
+				width: 100%;
+				@include lh(52px);
+				border-top: 2px solid #fff;
+				.ie7 & {
+					float: left;
+				}
+				&:first-child {
+					border-top: transparent;
+					.ie7 &, .ie8 & {
+						border-top: 1px solid #c1c5c9;
+					}
+					a {
+						@include box-shadow( inset 0 1px 1px rgba(1,1,1,.2));
+						
+					}
+
+				}
+				a {
+					background-color: #e3e7ec;
+					color: $text-clr;
+					text-align: center;
+					display: block;
+					&:hover {
+						background-color: #fff;
+						color: $text-clr;
+					}
+				}
+			}
+		}
+	}
+}
+

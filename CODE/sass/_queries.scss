@@ -1,0 +1,47 @@
+/* --------------------------------------------------------------------------------------
++
++ Queries
++
+-------------------------------------------------------------------------------------- */
+
+@media (max-width: 540px) {
+	#clients {
+		.slider1 {
+			// overflow: hidden;
+			margin: 0 auto;
+			display: block;
+			overflow: hidden;
+			.slide {
+				display: inline-block;
+				width: 40%;
+				@include lh(60px);
+				border-top: 2px solid rgba(255,255,255,0.1);
+				&:nth-child(2n+1) {
+					border-right: 2px solid rgba(255,255,255,0.1);
+				}
+				&:first-child, &:first-child + div {
+					border-top: none;
+				}
+				a {
+					width: 75%;
+					height: 60px;
+					margin: 0 auto;
+					display: table;
+					border-collapse:collapse;
+					img {
+						display: table-cell;
+						max-width: 100px;
+						vertical-align: middle;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 767px) {
+	.container {
+		width: 100%;
+	}
+}
