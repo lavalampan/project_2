@@ -391,7 +391,7 @@ input[type="submit"]::-moz-focus-inner {
   text-align: center;
   padding: 0 10px;
   color: white;
-  background: #ff605a;
+  background: #ffc65a;
   border: 2px solid #fff;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -408,7 +408,7 @@ input[type="submit"]::-moz-focus-inner {
   font-weight: 300;
 }
 .btn:hover {
-  background: #e25d5a;
+  background: #ffb529;
   color: white;
 }
 .btn.lightgreen {
@@ -658,11 +658,11 @@ footer li a:hover {
   height: auto;
   display: block;
   padding: 50px 0 0;
-  background: url('https://c4.staticflickr.com/8/7353/16339834946_71c89ff768_k.jpg') no-repeat 50% 50%;
+  background: url('https://c1.staticflickr.com/9/8594/16178207928_8efd8fc110_b.jpg') no-repeat 50% 0%;
   position: relative;
   background-attachment: fixed;
   text-align: center;
-  border-bottom: 7px solid #ff605a;
+  border-bottom: 7px solid #ffc05a;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
