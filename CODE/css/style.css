@@ -236,7 +236,7 @@ h1 {
 h2 {
   font-size: 28px;
   font-weight: 700;
-  color: #3e4d5c;
+  color: #3e5974;
   margin-bottom: 10px;
   line-height: 1.5;
 }
@@ -658,7 +658,7 @@ footer li a:hover {
   height: auto;
   display: block;
   padding: 50px 0 0;
-  background: url('http://placehold.it/1440x972') no-repeat 50% 50%;
+  background: url('https://c4.staticflickr.com/8/7353/16339834946_71c89ff768_k.jpg') no-repeat 50% 50%;
   position: relative;
   background-attachment: fixed;
   text-align: center;
@@ -1427,7 +1427,7 @@ section {
   color: #67727e;
 }
 #contact #order_now {
-  background-color: #ff605a;
+  background-color: #2e2e2e;
   padding: 90px 0 40px;
   display: block;
 }
