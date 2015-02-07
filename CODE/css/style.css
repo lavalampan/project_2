@@ -849,7 +849,7 @@ footer li a:hover {
     height: auto;
     display: block;
     padding: 50px 0 0;
-    background: url('https://c1.staticflickr.com/9/8594/16178207928_8efd8fc110_b.jpg') no-repeat 50% 0%;
+    background: url(images/header.png) no-repeat 50% 0%;
     position: relative;
     background-attachment: fixed;
     text-align: center;
@@ -1182,7 +1182,7 @@ section {
 }
 
 #team {
-    background: #1ed2d0 url('../images/team_mask.png') no-repeat 50% 50%;
+    background: #ffe48b no-repeat 50% 50%;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
@@ -1194,7 +1194,7 @@ section {
 }
 
 #team * {
-    color: #fff;
+    color: #3e4d5c;
 }
 
 #team .bx-wrapper {
