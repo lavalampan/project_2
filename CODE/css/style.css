@@ -887,13 +887,25 @@ footer li a:hover {
     line-height: 100px;
 }
 
-.content .subheader .bottom a {
+.content .subheader .bottom .business {
+    width: 50%;
+}
+
+.content .subheader .bottom .business:hover {
+    background-color: transparent;
+}
+
+.content .subheader .bottom .business a {
     font-weight: bold;
 }
 
-.content .subheader .bottom .left a {}
+.left {
+    float: right;
+}
 
-.content .subheader .bottom .right a {}
+.right {
+    float: left;
+}
 
 section {
     padding: 40px 0;
