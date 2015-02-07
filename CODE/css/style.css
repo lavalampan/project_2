@@ -655,7 +655,7 @@ label.error {
 header {
     height: 56px;
     position: fixed;
-    background-color: white;
+    background: #3e4d5c url('../images/noise.png') no-repeat 50% 50%;
     width: 100%;
     z-index: 2000;
     -webkit-box-shadow: 0 1px 1px rgba(1, 1, 1, 0.2);
@@ -685,7 +685,6 @@ header nav {
     height: 56px;
     width: 64px;
     display: block;
-    background: url('../images/menu_drop.png') no-repeat 50% 50%;
     cursor: pointer;
 }
 
@@ -705,7 +704,6 @@ header nav ul li {
     width: 100%;
     height: 52px;
     line-height: 52px;
-    border-top: 2px solid #fff;
 }
 
 .ie7 header nav ul li {
@@ -728,14 +726,12 @@ header nav ul li:first-child a {
 }
 
 header nav ul li a {
-    background-color: #e3e7ec;
-    color: #67727e;
+    color: white;
     text-align: center;
     display: block;
 }
 
 header nav ul li a:hover {
-    background-color: #fff;
     color: #67727e;
 }
 /* --------------------------------------------------------------------------------------
