@@ -253,7 +253,7 @@
     box-shadow: none;
   }
   header nav ul li a {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0);
   }
   header nav ul li a:hover, header nav ul li a.active {
     color: #ff605a;
