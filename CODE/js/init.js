@@ -8,6 +8,10 @@ $(document).ready( function () {
       $(this).addClass('active');
     });
 
+    $('subheader a').click(function(){
+      $(this).parent().siblings().find('.active').removeClass('active');
+      $(this).addClass('active');
+    });
 
 
 
@@ -230,7 +234,7 @@ $(document).ready( function () {
     var top_ofset = $('header').height() - 1;
 
 
-    $('header li a, .logo, .down, .subheader .btn, footer .container > a').click(function(){
+    $('header li a, .logo, .down, .business .left, .subheader .btn, footer .container > a').click(function(){
       $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top - top_ofset
       }, 1000);

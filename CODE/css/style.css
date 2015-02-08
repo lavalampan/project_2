@@ -397,7 +397,7 @@ h5 {
 
 h6 {
     font-size: 16px;
-    color: #ff605a;
+    color: #F58728;
     margin-bottom: 0;
     line-height: 1.5;
 }
@@ -412,11 +412,11 @@ a {
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
     text-decoration: none;
-    color: #ff605a;
+    color: #FFC05A;
 }
 
 a:hover {
-    color: #ff605a;
+    color: #FFC05A;
 }
 
 p {
@@ -680,6 +680,7 @@ header .logo img {
 
 header nav {
     position: absolute;
+    background: url('../images/menu_drop.png') no-repeat 50% 50%;
     right: 0;
     top: 0;
     height: 56px;
@@ -692,18 +693,20 @@ header nav ul {
     position: absolute;
     top: 100%;
     right: 0;
+    width: 300px;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    display: none;
+    display: ;
 }
 
 header nav ul li {
     width: 100%;
-    height: 52px;
+    height: 52p;
     line-height: 52px;
+    border-top: 2px solid #fff;
 }
 
 .ie7 header nav ul li {
@@ -726,13 +729,14 @@ header nav ul li:first-child a {
 }
 
 header nav ul li a {
+    background-color: #3e4d5c;
     color: white;
     text-align: center;
     display: block;
 }
 
 header nav ul li a:hover {
-    color: #67727e;
+    color: #FFC05A;
 }
 /* --------------------------------------------------------------------------------------
 +
@@ -824,14 +828,20 @@ footer li a {
 }
 
 footer li a:hover {
-    border: 2px solid #ff605a;
-    background-color: #ff605a;
+    border: 2px solid #FFC05A;
+    background-color: #FFC05A;
 }
 /* --------------------------------------------------------------------------------------
 +
 + CONTENT
 +
 -------------------------------------------------------------------------------------- */
+
+#im {
+    position:relative;
+    align-self: center;
+    width:80%;
+}
 
 .content {
     width: 100%;
@@ -850,6 +860,21 @@ footer li a:hover {
     background-attachment: fixed;
     text-align: center;
     border-bottom: 7px solid #ffc05a;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -ms-behavior: url(../js/backgroundsize.htc);
+}
+
+.content .midpage {
+    width: 100%;
+    height: 50%;
+    display: block;
+    background: url(images/header.png) no-repeat 50% 0%;
+    position: relative;
+    background-attachment:fixed;
+    text-align: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1093,6 +1118,17 @@ section {
     visibility: visible;
 }
 
+#mittbild {
+    background: url('images/header.png') no-repeat 50% 50%;
+    text-align: center;
+    height: 0px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -ms-behavior: url(../js/backgroundsize.htc);
+}
+
 #clients {
     background: #3e4d5c url('../images/noise.png') no-repeat 50% 50%;
     text-align: center;
@@ -1190,7 +1226,7 @@ section {
 }
 
 #team {
-    background: #ffe48b no-repeat 50% 50%;
+    background: #fff no-repeat 50% 50%;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
