@@ -918,6 +918,7 @@ footer li a:hover {
 
 .content .subheader .bottom .business a {
     font-weight: bold;
+    display: block;
 }
 
 .left {
