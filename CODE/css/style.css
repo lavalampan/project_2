@@ -838,9 +838,9 @@ footer li a:hover {
 -------------------------------------------------------------------------------------- */
 
 #im {
-    position:relative;
+    position: relative;
     align-self: center;
-    width:80%;
+    width: 80%;
 }
 
 .content {
@@ -873,7 +873,7 @@ footer li a:hover {
     display: block;
     background: url(images/header.png) no-repeat 50% 0%;
     position: relative;
-    background-attachment:fixed;
+    background-attachment: fixed;
     text-align: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -927,6 +927,10 @@ footer li a:hover {
 
 .right {
     float: left;
+}
+
+.showhide {
+    display: none;
 }
 
 section {
