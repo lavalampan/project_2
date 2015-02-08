@@ -2,11 +2,11 @@ $(document).ready(function () {
 
     //Show hide Divs Functions
     $("#toggleMarket").click(function () {
-        $("#marknad").slideToggle(500);
+        $("#about").slideToggle(500);
     });
 
     $("#toggleTech").click(function () {
-        $("#about").slideToggle(500);
+        $("#work").slideToggle(500);
     });
 
 
