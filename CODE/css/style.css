@@ -1122,7 +1122,7 @@ section {
 }
 
 #mittbild {
-    background: url('images/header.png') no-repeat 50% 50%;
+    background: url('/images/landing.jpg') no-repeat 50% 50%;
     text-align: center;
     height: 0px;
     -webkit-background-size: cover;
