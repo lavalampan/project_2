@@ -344,7 +344,7 @@ html.ie8 {
 
 body {
     color: #67727e;
-    font-family: "Roboto", sans-serif;
+    font-family: "PTsans", sans-serif;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 300;
@@ -358,16 +358,18 @@ h4,
 h5,
 h6 {
     line-height: 1;
-    font-family: "Roboto", sans-serif;
+    font-family: "PTsans", sans-serif;
     color: white;
     margin-bottom: 20px;
     font-weight: 300;
 }
 
 h1 {
-    font-size: 44px;
+    font-size: 50px;
     font-weight: 700;
     line-height: 1.136;
+    letter-spacing: -3px;
+    font-kerning: normal;
 }
 
 h2 {
@@ -544,7 +546,7 @@ input[type="submit"]::-moz-focus-inner {
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    font-family: "Roboto", sans-serif;
+    font-family: "PTsans", sans-serif;
     font-size: 16px;
     font-weight: 300;
 }
@@ -584,7 +586,7 @@ textarea {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     border-radius: 5px;
-    font-family: "Roboto", sans-serif;
+    font-family: "PTsans", sans-serif;
     display: block;
     font-size: 16px;
     margin-bottom: 30px;
@@ -839,6 +841,7 @@ footer li a:hover {
 
 #im {
     position: relative;
+    background: transparent;
     align-self: center;
     width: 80%;
 }
@@ -855,7 +858,7 @@ footer li a:hover {
     height: auto;
     display: block;
     padding: 50px 0 0;
-    background: url(/images/landing.jpg) no-repeat 50% 0%;
+    background: url(../images/landing.jpg) no-repeat 50% 0%;
     position: relative;
     background-attachment: fixed;
     text-align: center;
@@ -1122,7 +1125,7 @@ section {
 }
 
 #mittbild {
-    background: url('/images/landing.jpg') no-repeat 50% 50%;
+    background: url('../images/landing.jpg') no-repeat 50% 50%;
     text-align: center;
     height: 0px;
     -webkit-background-size: cover;
