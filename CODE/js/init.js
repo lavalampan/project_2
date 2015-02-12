@@ -27,6 +27,30 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
 
+    //script for isotope filtering
+    $('#filter_content').isotope({
+
+    });
+
+    // cache filter_content
+    var $filter_content = $('#filter_content');
+    // initialize isotope
+    $filter_content.isotope({
+        animationOptions: {
+            duration: 750,
+            queue: false
+        }
+    });
+    // filter items when filter link is clicked
+    $('#filters a').click(function () {
+        var selector = $(this).attr('data-filter');
+        $filter_content.isotope({
+            filter: selector
+        });
+        return false;
+    });
+
+
     //start slider depending of resolution
     var width_page = $(document).width();
 
@@ -87,6 +111,8 @@ $(document).ready(function () {
         }, 1000);
 
     });
+
+
 
     //Scroll up - button
     $(window).scroll(function () {
