@@ -910,23 +910,21 @@ footer li a:hover {
 
 .content .subheader .bottom .business {
     width: 50%;
+    float: left;
 }
 
 .content .subheader .bottom .business:hover {
-    background-color: transparent;
+    background-color: rgb(229, 229, 229);
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    cursor: pointer;
 }
 
 .content .subheader .bottom .business a {
     font-weight: bold;
     display: block;
-}
-
-.left {
-    float: right;
-}
-
-.right {
-    float: left;
 }
 
 .showhide {
@@ -938,36 +936,36 @@ section {
     text-align: center;
 }
 
-#about li {
+#teknik li {
     padding-top: 40px;
     border-top: 2px solid #e3e7ec;
 }
 
-#about li *:last-child {
+#teknik li *:last-child {
     margin-bottom: 0;
 }
 
-#about li:first-child {
+#teknik li:first-child {
     padding-top: 0;
     border-top: 0;
 }
 
-#about li span {
+#teknik li span {
     width: 96px;
     height: 96px;
     display: block;
     margin: 0 auto 35px;
 }
 
-#about li + li {
+#teknik li + li {
     margin-top: 40px;
 }
 
-#work {
+#market {
     background-color: #e8eef1;
 }
 
-#work .filter_wrap {
+#market .filter_wrap {
     height: 42px;
     line-height: 42px;
     -webkit-border-radius: 5px;
@@ -988,11 +986,11 @@ section {
     margin-bottom: 40px;
 }
 
-#work .filter_wrap span {
+#market .filter_wrap span {
     display: block;
 }
 
-#work .filter_wrap span b {
+#market .filter_wrap span b {
     width: 100%;
     margin-left: 20px;
     top: 18px;
@@ -1005,7 +1003,7 @@ section {
     border-color: #67727e transparent transparent transparent;
 }
 
-#work .filter_wrap ul {
+#market .filter_wrap ul {
     display: none;
     position: absolute;
     top: 100%;
@@ -1020,16 +1018,16 @@ section {
     z-index: 100000;
 }
 
-#work .filter_wrap ul a {
+#market .filter_wrap ul a {
     display: block;
     color: #67727e;
 }
 
-#work .filter_wrap ul a:hover {
+#market .filter_wrap ul a:hover {
     background-color: #E8EEF1;
 }
 
-#work .filter_wrap:hover {
+#market .filter_wrap:hover {
     -webkit-border-radius: 5px 5px 0 0;
     -moz-border-radius: 5px 5px 0 0;
     -ms-border-radius: 5px 5px 0 0;
@@ -1037,11 +1035,11 @@ section {
     border-radius: 5px 5px 0 0;
 }
 
-#work #filter_content {
+#market #filter_content {
     margin: auto;
 }
 
-#work #filter_content a {
+#market #filter_content a {
     width: 280px;
     height: 280px;
     overflow: hidden;
@@ -1054,7 +1052,7 @@ section {
     transition: all 0.5s ease;
 }
 
-#work #filter_content a img {
+#market #filter_content a img {
     width: 100%;
     -webkit-transition: all 2s ease-in-out;
     -moz-transition: all 2s ease-in-out;
@@ -1063,8 +1061,8 @@ section {
     transition: all 2s ease-in-out;
 }
 
-#work #filter_content a:before,
-#work #filter_content a:after {
+#market #filter_content a:before,
+#market #filter_content a:after {
     content: '';
     filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
@@ -1082,28 +1080,28 @@ section {
     visibility: hidden;
 }
 
-#work #filter_content a:before {
+#market #filter_content a:before {
     background-color: #000;
     z-index: 5;
 }
 
-.ie8 #work #filter_content a:before {
+.ie8 #market #filter_content a:before {
     filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=10);
     opacity: 0.1;
     display: none;
 }
 
-#work #filter_content a:after {
+#market #filter_content a:after {
     background: url('../images/eye.png') no-repeat 50% 50%;
     z-index: 10;
 }
 
-.ie8 #work #filter_content a:after {
+.ie8 #market #filter_content a:after {
     filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
 }
 
-#work #filter_content a:hover img {
+#market #filter_content a:hover img {
     -webkit-transform: scale(1.1, 1.1);
     -moz-transform: scale(1.1, 1.1);
     -ms-transform: scale(1.1, 1.1);
@@ -1111,13 +1109,13 @@ section {
     transform: scale(1.1, 1.1);
 }
 
-#work #filter_content a:hover:before {
+#market #filter_content a:hover:before {
     filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=10);
     opacity: 0.1;
     visibility: visible;
 }
 
-#work #filter_content a:hover:after {
+#market #filter_content a:hover:after {
     filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
     visibility: visible;
@@ -1560,6 +1558,20 @@ section {
 }
 
 #to_the_top:hover {
+    background-position: 0 -60px;
+}
+
+#scroll {
+    margin-right: auto;
+    margin-left: auto;
+    bottom: 15px;
+    width: 60px;
+    height: 60px;
+    background: url('../images/scroll.png') no-repeat 0 0;
+    z-index: 1000000;
+}
+
+#scroll:hover {
     background-position: 0 -60px;
 }
 /* --------------------------------------------------------------------------------------

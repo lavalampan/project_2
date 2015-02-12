@@ -2,11 +2,23 @@ $(document).ready(function () {
 
     //Show hide Divs Functions
     $("#toggleMarket").click(function () {
-        $("#work").slideToggle(500);
+        $("#market").slideToggle("slow");
+
+        if ($("#market").is(':visible')) {
+            $("html, body").animate({
+                scrollTop: $("#market").offset().top - top_ofset
+            }, 1500);
+        }
     });
 
     $("#toggleTech").click(function () {
-        $("#about").slideToggle(500);
+        $("#teknik").slideToggle("slow");
+
+        if ($("#teknik").is(':visible')) {
+            $("html, body").animate({
+                scrollTop: $("#teknik").offset().top - top_ofset
+            }, 1500);
+        }
     });
 
 
@@ -238,7 +250,7 @@ $(document).ready(function () {
     var top_ofset = $('header').height() - 1;
 
 
-    $('header li a, .logo, .down, .subheader .btn, footer .container > a').click(function () {
+    $('header li a, .logo, .down, .business a, .subheader .btn, footer .container > a').click(function () {
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top - top_ofset
         }, 1000);
@@ -275,7 +287,7 @@ $(document).ready(function () {
 
 
 
-    //scroll to the top icon
+    //Scroll up - button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('#to_the_top').fadeIn();
@@ -289,6 +301,14 @@ $(document).ready(function () {
         }, 600);
         $(this).fadeOut(500);
         return false;
+    });
+
+    //Scroll down - button
+    $('#scroll').click(function () {
+        $("html, body").animate({
+            scrollTop: 200
+        }, 600);
+
     });
 
     //validate contact form
@@ -333,8 +353,6 @@ $(document).ready(function () {
     });
 
 });
-
-
 
 
 

@@ -259,10 +259,10 @@
     color: #FFC05A;
   }
 
-  #about ul {
+  #teknik ul {
     font-size: 0;
   }
-  #about li {
+  #teknik li {
     font-size: 16px;
     display: inline-block;
     vertical-align: top;
@@ -275,19 +275,19 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  #about li:first-child, #about li:first-child + li + li, #about li:first-child + li + li + li + li, #about li:first-child + li + li + li + li + li + li {
+  #teknik li:first-child, #teknik li:first-child + li + li, #teknik li:first-child + li + li + li + li, #teknik li:first-child + li + li + li + li + li + li {
     padding-right: 39px;
     padding-left: 0;
     border-left: none;
   }
-  #about li:first-child, #about li:first-child + li {
+  #teknik li:first-child, #teknik li:first-child + li {
     border-top: none;
     padding-top: 0;
   }
-  #about li:last-child {
+  #teknik li:last-child {
     padding-bottom: 0;
   }
-  #about li + li {
+  #teknik li + li {
     margin-top: 0;
   }
 
@@ -478,16 +478,16 @@
     padding: 0;
   }
 
-  #about li {
+  #teknik li {
     width: 479px;
     text-align: left;
   }
-  #about li span {
+  #teknik li span {
     float: left;
     margin-right: 40px;
     margin-bottom: 10px;
   }
-  #about li p {
+  #teknik li p {
     clear: none;
   }
 
