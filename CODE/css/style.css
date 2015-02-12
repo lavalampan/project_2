@@ -855,7 +855,7 @@ footer li a:hover {
     height: auto;
     display: block;
     padding: 50px 0 0;
-    background: url(images/header.png) no-repeat 50% 0%;
+    background: url(/images/landing.jpg) no-repeat 50% 0%;
     position: relative;
     background-attachment: fixed;
     text-align: center;
