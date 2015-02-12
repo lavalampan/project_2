@@ -53,7 +53,35 @@ $(document).ready(function () {
 
     //start slider depending of resolution
     var width_page = $(document).width();
+    
+    //scripts for resolutions smaller than 768px
+    if( width_page < 768 ) {
+      $('header nav ul').css('width', width_page);
 
+      $('header nav').mouseover(function(){
+        $(this).children().show();
+        $('header nav li a').click(function(){
+          $(this).parent().parent().hide();
+        });
+        
+      });
+      $('header nav').mouseout(function(){
+        $(this).children().hide();
+      });
+    
+
+      //height of subheader
+      var sub_height = $(window).height() - 2* ($('header').height());
+      $('.subheader').css('height', sub_height);
+
+    }
+    
+    //scripts for resolutions larger than, or equal to 768px
+    if( width_page >= 768 ) {
+      //height of subheader
+      var sub_height = $(window).height() - 3* ($('header').height());
+      $('.subheader').css('height', sub_height);
+    }
 
     if (width_page > 540 && width_page <= 649) {
         $('.slider1').bxSlider({
@@ -73,14 +101,6 @@ $(document).ready(function () {
             moveSlides: 1,
             slideMargin: 0
         });
-        $('.slider2').bxSlider({
-            slideWidth: 226,
-            minSlides: 1,
-            maxSlides: 2,
-            moveSlides: 1,
-            slideMargin: 60,
-            infiniteLoop: false
-        });
     }
 
     if (width_page >= 960) {
@@ -90,14 +110,6 @@ $(document).ready(function () {
             maxSlides: 4,
             moveSlides: 1,
             slideMargin: 0
-        });
-        $('.slider2').bxSlider({
-            slideWidth: 226,
-            minSlides: 3,
-            maxSlides: 3,
-            slideMargin: 60,
-            moveSlides: 1,
-            infiniteLoop: false
         });
     }
 
@@ -136,47 +148,6 @@ $(document).ready(function () {
             scrollTop: 200
         }, 600);
 
-    });
-
-    //validate contact form
-    $("form.contact-form").validate({
-        rules: {
-            name: {
-                required: true,
-                minlength: 2
-            },
-            message: {
-                required: true,
-                minlength: 2
-            },
-            comments: {
-                required: true,
-                minlength: 2
-            },
-            email: {
-                required: true,
-                email: true
-            },
-            phone: {
-                required: false,
-                number: true
-            }
-        },
-        messages: {
-            name: {
-                required: "This field is required",
-                minlength: jQuery.format("At least {0} characters required")
-            },
-            comments: {
-                required: "This field is required",
-                minlength: jQuery.format("At least {0} characters required")
-            },
-            email: {
-                required: "This field is required",
-                email: "Wrong e-mail address"
-            }
-        },
-        errorClass: "error"
     });
 
 });
