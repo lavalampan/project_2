@@ -559,5 +559,6 @@
 .coverphoto {
     width: ;
     clear: both;
+    display:inline;
     margin-right: 40px;
 }
