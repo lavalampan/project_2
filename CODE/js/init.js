@@ -43,7 +43,6 @@ $(document).ready(function () {
     });
 
     //start slider depending of resolution
-    //start slider depending of resolution
     var width_page = $(document).width();
 
     //scripts for resolutions smaller than 768px
