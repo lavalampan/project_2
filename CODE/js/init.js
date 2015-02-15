@@ -53,34 +53,34 @@ $(document).ready(function () {
 
     //start slider depending of resolution
     var width_page = $(document).width();
-    
+
     //scripts for resolutions smaller than 768px
-    if( width_page < 768 ) {
-      $('header nav ul').css('width', width_page);
+    if (width_page < 768) {
+        $('header nav ul').css('width', width_page);
 
-      $('header nav').mouseover(function(){
-        $(this).children().show();
-        $('header nav li a').click(function(){
-          $(this).parent().parent().hide();
+        $('header nav').mouseover(function () {
+            $(this).children().show();
+            $('header nav li a').click(function () {
+                $(this).parent().parent().hide();
+            });
+
         });
-        
-      });
-      $('header nav').mouseout(function(){
-        $(this).children().hide();
-      });
-    
+        $('header nav').mouseout(function () {
+            $(this).children().hide();
+        });
 
-      //height of subheader
-      var sub_height = $(window).height() - 2* ($('header').height());
-      $('.subheader').css('height', sub_height);
+
+        //height of subheader
+        var sub_height = $(window).height() - 2 * ($('header').height());
+        $('.subheader').css('height', sub_height);
 
     }
-    
+
     //scripts for resolutions larger than, or equal to 768px
-    if( width_page >= 768 ) {
-      //height of subheader
-      var sub_height = $(window).height() - 3* ($('header').height());
-      $('.subheader').css('height', sub_height);
+    if (width_page >= 768) {
+        //height of subheader
+        var sub_height = $(window).height() - 3 * ($('header').height());
+        $('.subheader').css('height', sub_height);
     }
 
     if (width_page > 540 && width_page <= 649) {
@@ -142,12 +142,11 @@ $(document).ready(function () {
         return false;
     });
 
-    //Scroll down - button
+    //Scroll down - button "-100" equals the height of the businesses - bar"
     $('#scroll').click(function () {
         $("html, body").animate({
-            scrollTop: 200
-        }, 600);
-
+            scrollTop: $("#about").offset().top - top_ofset - 100
+        }, 1500);
     });
 
 });
