@@ -41,15 +41,6 @@ $(document).ready(function () {
             queue: false
         }
     });
-    // filter items when filter link is clicked
-    $('#filters a').click(function () {
-        var selector = $(this).attr('data-filter');
-        $filter_content.isotope({
-            filter: selector
-        });
-        return false;
-    });
-
 
     //start slider depending of resolution
     var width_page = $(document).width();
@@ -101,6 +92,14 @@ $(document).ready(function () {
             moveSlides: 1,
             slideMargin: 0
         });
+        $('.slider2').bxSlider({
+            slideWidth: 226,
+            minSlides: 1,
+            maxSlides: 2,
+            moveSlides: 1,
+            slideMargin: 60,
+            infiniteLoop: false
+        });
     }
 
     if (width_page >= 960) {
@@ -111,6 +110,15 @@ $(document).ready(function () {
             moveSlides: 1,
             slideMargin: 0
         });
+
+        $('.slider2').bxSlider({
+            slideWidth: 226,
+            minSlides: 3,
+            maxSlides: 3,
+            slideMargin: 60,
+            moveSlides: 1,
+            infiniteLoop: false
+        });
     }
 
 
@@ -120,10 +128,8 @@ $(document).ready(function () {
     $('header li a, .logo, .down, .subheader .btn, footer .container > a').click(function () {
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top - top_ofset
-        }, 1000);
-
+        }, 1500);
     });
-
 
 
     //Scroll up - button
