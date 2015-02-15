@@ -41,16 +41,8 @@ $(document).ready(function () {
             queue: false
         }
     });
-    // filter items when filter link is clicked
-    $('#filters a').click(function () {
-        var selector = $(this).attr('data-filter');
-        $filter_content.isotope({
-            filter: selector
-        });
-        return false;
-    });
 
-
+    //start slider depending of resolution
     //start slider depending of resolution
     var width_page = $(document).width();
 
@@ -137,10 +129,8 @@ $(document).ready(function () {
     $('header li a, .logo, .down, .subheader .btn, footer .container > a').click(function () {
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top - top_ofset
-        }, 1000);
-
+        }, 1500);
     });
-
 
 
     //Scroll up - button

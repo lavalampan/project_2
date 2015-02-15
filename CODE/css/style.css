@@ -743,7 +743,7 @@ section {
 }
 
 #market {
-    background-color: #e8eef1;
+    background-color: #fff;
 }
 
 #market .filter_wrap {
@@ -1270,4 +1270,19 @@ section {
     .container {
         width: 100%;
     }
+}
+
+.coverphoto {
+    width: 230px;
+    margin-right: 40px;
+}
+
+.description {
+    text-align: left;
+}
+
+#about {
+    -webkit-box-shadow: 0 2px 2px rgba(1, 1, 1, 0.2);
+    -moz-box-shadow: 0 2px 2px rgba(1, 1, 1, 0.2);
+    box-shadow: 0 2px 2px rgba(1, 1, 1, 0.2);
 }
