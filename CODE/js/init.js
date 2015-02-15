@@ -101,6 +101,14 @@ $(document).ready(function () {
             moveSlides: 1,
             slideMargin: 0
         });
+        $('.slider2').bxSlider({
+            slideWidth: 226,
+            minSlides: 1,
+            maxSlides: 2,
+            moveSlides: 1,
+            slideMargin: 60,
+            infiniteLoop: false
+        });
     }
 
     if (width_page >= 960) {
@@ -110,6 +118,15 @@ $(document).ready(function () {
             maxSlides: 4,
             moveSlides: 1,
             slideMargin: 0
+        });
+
+        $('.slider2').bxSlider({
+            slideWidth: 226,
+            minSlides: 3,
+            maxSlides: 3,
+            slideMargin: 60,
+            moveSlides: 1,
+            infiniteLoop: false
         });
     }
 
