@@ -158,7 +158,7 @@ html.ie8 {
 
 body {
     color: #67727e;
-    font-family: "PTsans", sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 300;
@@ -172,7 +172,7 @@ h4,
 h5,
 h6 {
     line-height: 1;
-    font-family: "PTsans", sans-serif;
+    font-family: "PT Sans", sans-serif;
     color: white;
     margin-bottom: 20px;
     font-weight: 300;
@@ -324,7 +324,7 @@ strong {
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    font-family: "PTsans", sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-size: 16px;
     font-weight: 300;
 }
@@ -364,7 +364,7 @@ textarea {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     border-radius: 5px;
-    font-family: "PTsans", sans-serif;
+    font-family: "PT Sans", sans-serif;
     display: block;
     font-size: 16px;
     margin-bottom: 30px;
@@ -1270,4 +1270,11 @@ section {
     .container {
         width: 100%;
     }
+}
+
+
+#about {
+    -webkit-box-shadow: 0 1px 1px rgba(1, 1, 1, 0.2);
+    -moz-box-shadow: 0 1px 1px rgba(1, 1, 1, 0.2);
+    box-shadow: 0 1px 1px rgba(1, 1, 1, 0.2);
 }
