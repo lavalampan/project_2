@@ -1137,11 +1137,6 @@ section {
 }
 
 #teknik {
-    -webkit-box-shadow: inset 2px 2px -2px rgba(0, 0, 0, 0.8);
-    -moz-box-shadow: inset 0 2px 2px -2px rgba(0, 0, 0, 0.8);
-    box-shadow: inset 0 4px 4px -4px rgba(0, 0, 0, 0.4);
-    -webkit-box-shadow: 0 2px 2px rgba(1, 1, 1, 0.2);
-    -moz-box-shadow: 0 2px 2px rgba(1, 1, 1, 0.2);
-    box-shadow: 0 2px 2px rgba(1, 1, 1, 0.2);
 }
+
 >>>>>>> d79fd45a1d9c45872438253415482c6f7b77bd72
