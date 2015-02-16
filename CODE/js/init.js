@@ -21,12 +21,6 @@ $(document).ready(function () {
         }
     });
 
-    //header links
-    $('header nav a').click(function () {
-        $(this).parent().siblings().find('.active').removeClass('active');
-        $(this).addClass('active');
-    });
-
     //start slider depending of resolution
     var width_page = $(document).width();
 
@@ -39,7 +33,6 @@ $(document).ready(function () {
             $('header nav li a').click(function () {
                 $(this).parent().parent().hide();
             });
-
         });
         $('header nav').mouseout(function () {
             $(this).children().hide();

@@ -262,6 +262,7 @@
         float: right;
         background: none;
         cursor: normal;
+        visibility: hidden;
     }
     header nav ul {
         position: static;
@@ -270,7 +271,7 @@
         width: auto;
         filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
-        visibility: visible;
+        visibility: hidden;
     }
     .ie7 header nav ul,
     .ie8 header nav ul {
@@ -283,6 +284,7 @@
         border-top: none;
         float: left;
         margin-left: 30px;
+        visibility: hidden;
     }
     header nav ul li:first-child {
         margin-left: 0;
@@ -337,75 +339,6 @@
     #teknik li + li {
         margin-top: 0;
     }
-    #work .filter_wrap {
-        width: 557px;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        height: 42px;
-        line-height: 38px;
-        border: 2px solid #fff;
-        padding: 0;
-        min-width: auto;
-        margin-top: 40px;
-    }
-    #work .filter_wrap:hover {
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -ms-border-radius: 5px;
-        -o-border-radius: 5px;
-        border-radius: 5px;
-    }
-    .ie8 #work .filter_wrap {
-        width: 578px;
-    }
-    #work .filter_wrap span {
-        display: none;
-    }
-    #work .filter_wrap ul {
-        display: block;
-        position: static;
-        top: auto;
-        left: auto;
-        width: auto;
-        -webkit-border-radius: none;
-        -moz-border-radius: none;
-        -ms-border-radius: none;
-        -o-border-radius: none;
-        border-radius: none;
-    }
-    #work .filter_wrap ul li {
-        float: left;
-        width: 113px;
-        border-left: 1px solid #fff;
-        border-right: 1px solid #fff;
-        background-color: #e8eef1;
-    }
-    #work .filter_wrap ul li.active,
-    #work .filter_wrap ul li:hover {
-        background-color: #fff;
-    }
-    #work .filter_wrap ul li:first-child,
-    #work .filter_wrap ul li:last-child {
-        width: 103px;
-    }
-    #work .filter_wrap ul li:first-child {
-        border-left: none;
-    }
-    #work .filter_wrap ul li:last-child {
-        border-right: none;
-    }
-    #work .filter_wrap ul a:hover {
-        background-color: #fff;
-    }
-    #work #filter_content {
-        margin: 0 auto;
-        width: 590px;
-        left: -10px;
-    }
-    #work #filter_content a {
-        margin: 7px;
-    }
     #team {
         padding-bottom: 40px;
     }
@@ -431,34 +364,6 @@
         margin-top: -102px;
         margin-left: -102px;
     }
-    #team .slider2_popups {
-        top: -20px;
-        position: relative;
-    }
-    #team .slider2_popups .popup-item {
-        top: 20px;
-    }
-    #team .slider2_popups .popup-item h6 {
-        font-size: 20px;
-        display: inline-block;
-        padding: 0 15px 15px;
-        border-bottom: 1px solid #fff;
-        font-weight: 400;
-    }
-    #team .slider2_popups .popup-item p {
-        border: none;
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
-    #team .slider2_popups .popup-item .close {
-        position: absolute;
-        right: 20px;
-        top: 15px;
-    }
-    .lightbox .lb-outerContainer {
-        max-height: 600px;
-        overflow: visible;
-    }
     #clients .container {
         padding: 0;
     }
@@ -479,13 +384,6 @@
     }
     #clients .bx-wrapper .bx-controls-direction a {
         top: 45px;
-    }
-    #contact form .left {
-        width: 324px;
-    }
-    #contact form .left.righ {
-        float: right;
-        text-align: right;
     }
     #contact #map {
         margin-top: -80px;
@@ -531,17 +429,6 @@
     #teknik li p {
         clear: none;
     }
-    #work .filter_wrap {
-        min-width: 0;
-    }
-    #work #filter_content {
-        width: 100%;
-        margin: 0 auto;
-        left: 0;
-    }
-    #contact form .left {
-        width: 459px;
-    }
     footer {
         padding: 50px 0;
     }
@@ -555,7 +442,4 @@
     footer .container .left > a {
         margin-right: 30px;
     }
-}
-.coverphoto {
-   
 }
