@@ -443,3 +443,9 @@
         margin-right: 30px;
     }
 }
+
+.textbox {
+    width: 50%;
+    float: left;
+    text-align: left;
+}
