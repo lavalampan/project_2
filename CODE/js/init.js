@@ -27,21 +27,6 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
 
-    //script for isotope filtering
-    $('#filter_content').isotope({
-
-    });
-
-    // cache filter_content
-    var $filter_content = $('#filter_content');
-    // initialize isotope
-    $filter_content.isotope({
-        animationOptions: {
-            duration: 750,
-            queue: false
-        }
-    });
-
     //start slider depending of resolution
     var width_page = $(document).width();
 
