@@ -244,10 +244,10 @@
         border-bottom: 1px solid #e3e7ec;
     }
     header .logo {
-        top: 35px;
+        top: 20px;
     }
     header .logo img {
-        width: 119px;
+        width: 200px;
     }
     header nav {
         position: static;

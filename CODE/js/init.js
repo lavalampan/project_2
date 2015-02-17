@@ -71,8 +71,8 @@ $(document).ready(function () {
         });
         $('.slider2').bxSlider({
             slideWidth: 226,
-            minSlides: 1,
-            maxSlides: 2,
+            minSlides: 3,
+            maxSlides: 3,
             moveSlides: 1,
             slideMargin: 60,
             infiniteLoop: false
