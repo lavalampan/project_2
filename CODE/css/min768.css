@@ -211,9 +211,6 @@
     header nav ul {
         display: block;
     }
-    .content {
-        padding-top: 96px;
-    }
     .content .subheader {
         padding-top: 190px;
         min-height: 600px;
@@ -231,7 +228,7 @@
     }
     .container {
         width: 768px;
-        padding: 0 40px;
+        padding: 0 20px;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
@@ -449,6 +446,6 @@
     text-align: justify;
 }
 
-.textbox h2{
+.textbox h2 {
     text-align: center;
 }

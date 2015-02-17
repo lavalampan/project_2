@@ -435,12 +435,28 @@ label.error {
 header {
     height: 56px;
     position: fixed;
-    background: #3e4d5c url('../images/noise.png') no-repeat 50% 50%;
     width: 100%;
     z-index: 2000;
-    -webkit-box-shadow: 0 1px 1px rgba(1, 1, 1, 0.2);
-    -moz-box-shadow: 0 1px 1px rgba(1, 1, 1, 0.2);
-    box-shadow: 0 1px 1px rgba(1, 1, 1, 0.2);
+    background: -moz-linear-gradient(top, rgba(220, 147, 56, 1) 0%, rgba(220, 147, 56, 1) 63%, rgba(220, 147, 56, 0) 100%);
+    /* FF3.6+ */
+    
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(220, 147, 56, 1)), color-stop(63%, rgba(220, 147, 56, 1)), color-stop(100%, rgba(220, 147, 56, 0)));
+    /* Chrome,Safari4+ */
+    
+    background: -webkit-linear-gradient(top, rgba(220, 147, 56, 1) 0%, rgba(220, 147, 56, 1) 63%, rgba(220, 147, 56, 0) 100%);
+    /* Chrome10+,Safari5.1+ */
+    
+    background: -o-linear-gradient(top, rgba(220, 147, 56, 1) 0%, rgba(220, 147, 56, 1) 63%, rgba(220, 147, 56, 0) 100%);
+    /* Opera 11.10+ */
+    
+    background: -ms-linear-gradient(top, rgba(220, 147, 56, 1) 0%, rgba(220, 147, 56, 1) 63%, rgba(220, 147, 56, 0) 100%);
+    /* IE10+ */
+    
+    background: linear-gradient(to bottom, rgba(220, 147, 56, 1) 0%, rgba(220, 147, 56, 1) 63%, rgba(220, 147, 56, 0) 100%);
+    /* W3C */
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#dc9338', endColorstr='#00dc9338', GradientType=0);
+    /* IE6-9 */
 }
 
 header .container {
@@ -509,6 +525,7 @@ header nav ul li:first-child a {
 
 header nav ul li a {
     background-color: #3e4d5c;
+    font-weight: bold;
     color: white;
     text-align: center;
     display: block;
@@ -524,7 +541,7 @@ header nav ul li a:hover {
 -------------------------------------------------------------------------------------- */
 
 footer {
-    background-color: #3e4d5c;
+    background-color: #DC9338;
     padding: 40px 0;
     text-align: center;
     position: relative;
@@ -627,7 +644,6 @@ footer li a:hover {
     width: 100%;
     position: relative;
     top: auto !important;
-    padding-top: 56px;
 }
 
 .content .subheader {
@@ -639,7 +655,6 @@ footer li a:hover {
     position: relative;
     background-attachment: fixed;
     text-align: center;
-    border-bottom: 7px solid #ffc05a;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -663,7 +678,9 @@ footer li a:hover {
 }
 
 .content .subheader h1 {
-    padding: 0 20px 0;
+    margin-top: 90px;
+    font-size: 80px;
+    padding: 0 30px 0;
     font-weight: bold;
 }
 
@@ -686,16 +703,20 @@ footer li a:hover {
     height: 100px;
     background-color: white;
     width: 100%;
-    line-height: 100px;
+    line-height: 85px;
 }
 
 .content .subheader .bottom .business {
     width: 50%;
     float: left;
+    border-top: 15px solid #DC9338;
+    -webkit-box-shadow: 0 2px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 2px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 .content .subheader .bottom .business:hover {
-    background-color: rgb(229, 229, 229);
+    background-color: #DC9338;
     -moz-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
     -webkit-transition: all .2s ease-in;
@@ -761,7 +782,7 @@ section {
 }
 
 #clients {
-    background: #3e4d5c url('../images/noise.png') no-repeat 50% 50%;
+    background-color: #DC9338;
     text-align: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1127,7 +1148,7 @@ section {
     overflow: auto;
 }
 
-.description h2{
+.description h2 {
     text-align: center;
 }
 
