@@ -978,20 +978,6 @@ section {
     z-index: 10;
 }
 
-#contact form {
-    overflow: hidden;
-    text-align: center;
-}
-
-#contact form .left {
-    width: 100%;
-    position: relative;
-}
-
-#contact form .btn {
-    border: none;
-}
-
 #contact #map {
     width: 100%;
     height: 426px;
@@ -1141,21 +1127,18 @@ section {
     overflow: auto;
 }
 
+.description h2{
+    text-align: center;
+}
+
 #about {
     -webkit-box-shadow: 0 2px 2px rgba(1, 1, 1, 0.2);
     -moz-box-shadow: 0 2px 2px rgba(1, 1, 1, 0.2);
     box-shadow: 0 2px 2px rgba(1, 1, 1, 0.2);
 }
 
-#teknik {}
-.space {
-    width: 10%;
-    margin-right: 5px;
-    float:left;
-}
-
 #aboutpic {
-    width: 35%;
-    float: left;
+    width: 80%;
+    float: right;
     margin-right: 15px;
 }
