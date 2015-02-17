@@ -337,28 +337,6 @@
     #team {
         padding-bottom: 40px;
     }
-    #team .bx-wrapper .slider2 .slide {
-        margin-top: 0;
-        position: relative;
-    }
-    #team .bx-wrapper .slider2 .slide a {
-        width: 204px;
-        height: 204px;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-        border-radius: 50%;
-        background-origin: padding-box;
-    }
-    #team .bx-wrapper .slider2 .slide img {
-        width: 204px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        margin-top: -102px;
-        margin-left: -102px;
-    }
     #clients .container {
         padding: 0;
     }
@@ -439,13 +417,19 @@
     }
 }
 
-.textbox {
-    margin: 2%;
-    width: 45%;
-    float: left;
-    text-align: justify;
-}
-
-.textbox h2 {
-    text-align: center;
-}
+@media (min-width: 1500px) {
+    header .container {
+        width: 1500px;
+    }
+    .textbox {
+        margin: 2%;
+        width: 45%;
+        float: left;
+        text-align: justify;
+    }
+    .textbox h2 {
+        text-align: center;
+    }
+    .employer {
+        float: left;
+    }

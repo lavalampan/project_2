@@ -793,61 +793,11 @@ section {
     color: black;
 }
 
-#team .bx-wrapper {
-    margin: 70px auto 0;
-    position: relative;
-}
-
-#team .bx-wrapper .bx-pager {
-    display: none;
-}
-
-#team .bx-viewport {
-    overflow: visible;
-}
-
-#team .slide {
+#team .company {
     text-align: center;
     margin-top: 30px;
     position: relative;
-}
-
-#team .slide:first-child {
-    margin-top: 0;
-}
-
-#team .slide > a {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    border: 11px solid #fff;
-    width: 204px;
-    height: 204px;
-    background-color: #fff;
-    box-sizing: padding-box;
-    display: block;
-    overflow: hidden;
-    position: relative;
-    display: block;
-    margin: 0 auto 15px;
-    cursor: pointer;
-}
-
-#team .slide > a img {
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 100%;
-    overflow: hidden;
-    width: 204px;
-}
-
-#team .slide h5,
-#team .slide p {
-    margin-bottom: 0;
+    display: inline-block;
 }
 
 #clients {
@@ -1171,4 +1121,22 @@ section {
 #partners .slider1 a img {
     max-width: 85%;
     max-height: 100%;
+}
+
+.employer img {
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+    width: 254px;
+    margin-bottom: 25px;
+}
+
+.employer {
+    margin-right: 15px;
+    position: relative;
+    padding: 10px;
 }
