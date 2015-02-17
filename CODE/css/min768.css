@@ -262,7 +262,6 @@
         float: right;
         background: none;
         cursor: normal;
-        visibility: hidden;
     }
     header nav ul {
         position: static;
@@ -271,7 +270,7 @@
         width: auto;
         filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
-        visibility: hidden;
+        visibility: visible;
     }
     .ie7 header nav ul,
     .ie8 header nav ul {
@@ -284,7 +283,6 @@
         border-top: none;
         float: left;
         margin-left: 30px;
-        visibility: hidden;
     }
     header nav ul li:first-child {
         margin-left: 0;
@@ -445,7 +443,12 @@
 }
 
 .textbox {
-    width: 50%;
+    margin: 2%;
+    width: 45%;
     float: left;
-    text-align: left;
+    text-align: justify;
+}
+
+.textbox h2{
+    text-align: center;
 }

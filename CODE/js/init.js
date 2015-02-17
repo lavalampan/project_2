@@ -38,7 +38,6 @@ $(document).ready(function () {
             $(this).children().hide();
         });
 
-
         //height of subheader
         var sub_height = $(window).height() - 2 * ($('header').height());
         $('.subheader').css('height', sub_height);

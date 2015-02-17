@@ -473,13 +473,12 @@ header nav ul {
     position: absolute;
     top: 100%;
     right: 0;
-    width: 300px;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    display: ;
+    display: none;
 }
 
 header nav ul li {
@@ -1149,3 +1148,14 @@ section {
 }
 
 #teknik {}
+.space {
+    width: 10%;
+    margin-right: 5px;
+    float:left;
+}
+
+#aboutpic {
+    width: 35%;
+    float: left;
+    margin-right: 15px;
+}
