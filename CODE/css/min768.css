@@ -233,6 +233,12 @@
         -moz-box-sizing: border-box;
         box-sizing: border-box;
     }
+    .content .subheader h1 {
+        margin-top: 90px;
+        font-size: 80px;
+        padding: 0 30px 0;
+        font-weight: bold;
+    }
     section {
         padding: 80px 0;
     }

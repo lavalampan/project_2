@@ -286,7 +286,7 @@ strong {
 .container {
     margin: 0 auto;
     width: 320px;
-    padding: 0 20px;
+    */ padding: 0 20px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -574,13 +574,6 @@ footer li a:hover {
     -o-background-size: cover;
     background-size: cover;
     -ms-behavior: url(../js/backgroundsize.htc);
-}
-
-.content .subheader h1 {
-    margin-top: 90px;
-    font-size: 80px;
-    padding: 0 30px 0;
-    font-weight: bold;
 }
 
 .content .subheader span {
@@ -985,6 +978,9 @@ section {
 @media (max-width: 767px) {
     .container {
         width: 100%;
+    }
+    .container h1 {
+        font-size: 55px;
     }
 }
 
