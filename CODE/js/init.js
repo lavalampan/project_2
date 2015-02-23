@@ -27,13 +27,13 @@ $(document).ready(function () {
     //scripts for resolutions smaller than 768px
     if (width_page < 768) {
         $('header nav ul').css('width', width_page);
-
         $('header nav').mouseover(function () {
             $(this).children().show();
             $('header nav li a').click(function () {
                 $(this).parent().parent().hide();
             });
         });
+
         $('header nav').mouseout(function () {
             $(this).children().hide();
         });
