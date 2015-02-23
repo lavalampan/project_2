@@ -228,11 +228,11 @@ a {
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
     text-decoration: none;
-    color: #FFC05A;
+    color: #fff;
 }
 
 a:hover {
-    color: #FFC05A;
+    color: #DC9338;
 }
 
 p {
@@ -593,7 +593,7 @@ footer li a:hover {
     bottom: 0;
     right: 0;
     height: 100px;
-    background-color: white;
+    background-color: #DC9338;
     width: 100%;
     line-height: 85px;
 }
@@ -609,7 +609,8 @@ footer li a:hover {
 }
 
 .bottom .business:hover {
-    background-color: #DC9338;
+    background-color: #fff;
+    color: #DC9338;
     -moz-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
     -webkit-transition: all .2s ease-in;
@@ -982,6 +983,11 @@ section {
     .container h1 {
         font-size: 55px;
     }
+    .container .description {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .partner img {}
 }
 
 .coverphoto {
@@ -1023,8 +1029,9 @@ section {
 }
 
 #partners {
-    background-color: #DC9338;
     text-align: center;
+    position: relative;
+    background-color: #DC9338;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1037,86 +1044,17 @@ section {
     color: #fff;
 }
 
-#partners .bx-wrapper {
-    margin: 70px auto 0;
-    position: relative;
-}
-
-#partners .bx-wrapper .bx-pager {
-    display: none;
-}
-
-#partners .bx-wrapper .bx-controls-direction {
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: block;
-    height: 26px;
-    width: 100%;
-}
-
-#partners .bx-wrapper .bx-controls-direction a {
-    border: 0;
-    font: 0/0 a;
-    text-shadow: none;
-    color: transparent;
-    background-color: transparent;
-    width: 14px;
-    height: 26px;
-    display: block;
-    position: absolute;
-    top: 5px;
-    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=50);
+#partners img {
+    width: 300px;
     opacity: 0.5;
 }
 
-#partners .bx-wrapper .bx-controls-direction a:hover {
-    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+#partners img:hover {
     opacity: 1;
-}
-
-#partners .bx-wrapper .bx-controls-direction a.bx-prev {
-    position: absolute;
-    left: -65px;
-    background: url('../images/arrowleft.png') no-repeat 0 0;
-}
-
-#partners .bx-wrapper .bx-controls-direction a.bx-next {
-    position: absolute;
-    right: -64px;
-    background: url('../images/arrowright.png') no-repeat 0 0;
-}
-
-#partners .slider1 {
-    font-size: 0;
-}
-
-#partners .slider1 .slide {
-    width: 200px;
-    height: 50px;
-    display: block;
-}
-
-#partners .slider1 .slide:last-child {
-    border-right: none;
-}
-
-#partners .slider1 a {
-    height: auto;
-    text-align: center;
-    overflow: hidden;
-    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=50);
-    opacity: 0.5;
-}
-
-#partners .slider1 a:hover {
-    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
-    opacity: 1;
-}
-
-#partners .slider1 a img {
-    max-width: 85%;
-    max-height: 100%;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
 }
 
 .employer img {
@@ -1135,4 +1073,18 @@ section {
     margin-right: 15px;
     position: relative;
     padding: 10px;
+}
+
+.partnerlist {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.partner {
+    float: left;
+    padding-right: 25px;
 }

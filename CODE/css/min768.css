@@ -439,3 +439,7 @@
     .employer {
         float: left;
     }
+    .partner {
+        float: left;
+        padding-right: 25px;
+    }
