@@ -953,10 +953,6 @@ section {
         width: 40%;
         height: 60px;
         line-height: 60px;
-        border-top: 2px solid rgba(255, 255, 255, 0.1);
-    }
-    #clients .slider1 .slide:nth-child(2n+1) {
-        border-right: 2px solid rgba(255, 255, 255, 0.1);
     }
     #clients .slider1 .slide:first-child,
     #clients .slider1 .slide:first-child + div {
@@ -966,13 +962,18 @@ section {
         width: 75%;
         height: 60px;
         margin: 0 auto;
-        display: table;
         border-collapse: collapse;
     }
     #clients .slider1 .slide a img {
         display: table-cell;
-        max-width: 100px;
+        width: 500px;
         vertical-align: middle;
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=50);
+        opacity: 0.5;
+    }
+    #clients .slider1 a img:hover {
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+        opacity: 1;
     }
 }
 
