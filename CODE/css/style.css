@@ -549,7 +549,7 @@ footer li a:hover {
     width: 100%;
     height: auto;
     display: block;
-    padding: 50px 0 0;
+    padding: 15px 0 0;
     background: url(../images/landing2.jpg) no-repeat 50% 0%;
     position: relative;
     background-attachment: fixed;
@@ -559,6 +559,10 @@ footer li a:hover {
     -o-background-size: cover;
     background-size: cover;
     -ms-behavior: url(../js/backgroundsize.htc);
+}
+
+.content .subheader h1 {
+    margin-top: 25%;
 }
 
 .content .midpage {
@@ -971,10 +975,6 @@ section {
         filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=50);
         opacity: 0.5;
     }
-    #clients .slider1 a img:hover {
-        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
-        opacity: 1;
-    }
 }
 
 @media (max-width: 767px) {
@@ -982,11 +982,36 @@ section {
         width: 100%;
     }
     .container h1 {
-        font-size: 55px;
+        font-size: 45px;
     }
     .container .description {
         padding-left: 10px;
         padding-right: 10px;
+    }
+    .subheader {
+        padding-top: 1900px;
+    }
+    .coverphoto {
+        display: inline;
+        width: 100%;
+        max-height: 15%;
+        margin-bottom: 30px;
+        margin-top: -80px;
+        height: auto;
+        display: block;
+        position: relative;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        -ms-behavior: url(../js/backgroundsize.htc);
+    }
+    #partners img {
+        width: 50%;
+        opacity: 0.5;
+        position: relative;
+        overflow: hidden;
     }
 }
 
@@ -1044,13 +1069,6 @@ section {
     color: #fff;
 }
 
-#partners img {
-    width: 300px;
-    opacity: 0.5;
-    position: relative;
-    overflow: hidden;
-}
-
 #partners img:hover {
     opacity: 1;
     -moz-transition: all .2s ease-in;
@@ -1082,14 +1100,6 @@ section {
     margin-top: 30px;
     position: relative;
     display: inline-block;
-    /*
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    margin-top: 30px;
-    position: relative;
-    display: inline-block;
-    */
 }
 
 .partner {

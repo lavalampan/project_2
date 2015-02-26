@@ -187,6 +187,12 @@
     #clients .bx-wrapper .bx-controls-direction a {
         top: 45px;
     }
+    #partners img {
+        width: 300px;
+        opacity: 0.5;
+        position: relative;
+        overflow: hidden;
+    }
     #contact #map {
         margin-top: -80px;
     }

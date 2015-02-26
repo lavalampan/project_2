@@ -1,5 +1,8 @@
 $(document).ready(function () {
 
+    //start slider depending of resolution
+    var width_page = $(document).width();
+
     //Show hide Divs Functions
     $("#toggleMarket").click(function () {
         $("#market").slideToggle("slow");
@@ -20,9 +23,6 @@ $(document).ready(function () {
             }, 1500);
         }
     });
-
-    //start slider depending of resolution
-    var width_page = $(document).width();
 
     //scripts for resolutions smaller than 768px
     if (width_page < 768) {
