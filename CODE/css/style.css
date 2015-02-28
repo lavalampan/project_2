@@ -669,9 +669,9 @@ section {
 }
 
 #market h5 {
-    color:#3e5974;
+    color: #3e5974;
     margin-bottom: 0;
-    margin-top:15px;
+    margin-top: 15px;
 }
 
 #mittbild {
@@ -1053,10 +1053,20 @@ section {
     box-shadow: 0 2px 2px rgba(1, 1, 1, 0.2);
 }
 
-#aboutpic {
-    width: 80%;
-    float: right;
-    margin-right: 15px;
+.wrapper {
+    display: inline-block;
+}
+
+.wrapper>div {}
+
+.wrapper>div.rhs {
+    background-image: url("../images/about.jpg");
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.textbox h2 {
+    text-align: center;
 }
 
 #partners {
@@ -1113,4 +1123,43 @@ section {
     position: relative;
     padding: 10px;
 }
+
+.padding {
+    text-align: justify;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.paddingTech {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 300px;
+}
+
+p.center {
+    text-align: center;
+}
+
+.floatleft {
+    float: left;
+}
+
+p.clearnone {
+    clear: none;
+    !important;
+}
+
+#aboutus {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-image: "images/about.jpg";
+    background-size: cover;
+}
+
+.textbox {
+    padding-left: 10px;
+    padding-right: 10px;
 }

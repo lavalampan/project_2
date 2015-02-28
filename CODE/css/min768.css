@@ -128,6 +128,22 @@
     header nav ul li a.active {
         color: #FFC05A;
     }
+    .wrapper {
+        display: table;
+    }
+    .wrapper>div {
+        display: table-cell;
+        width: 50%;
+        height: inherit;
+    }
+    .wrapper>div.rhs {
+        background-image: url("../images/about.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .wrapper>div.lhs {
+        padding-left: 30px;
+    }
     #teknik ul {
         font-size: 0;
     }
@@ -259,15 +275,6 @@
     header .container {
         width: 1500px;
     }
-    .textbox {
-        margin: 2%;
-        width: 45%;
-        float: left;
-        text-align: justify;
-    }
-    .textbox h2 {
-        text-align: center;
-    }
     .employer {
         float: left;
     }
@@ -275,3 +282,4 @@
         float: left;
         padding-right: 25px;
     }
+}
